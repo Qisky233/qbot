@@ -1,0 +1,15 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "app"
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+    {name = "Console", module_name = "nonebot.adapters.console"}
+]
+plugins = []
+plugin_dirs = ["app/plugins"]
+builtin_plugins = ["echo", "single_session"]
